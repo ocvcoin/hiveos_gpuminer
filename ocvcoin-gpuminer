@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+
+
+rm -rf ~/ocvcoin_gpuminer
+
+mkdir -p ~/ocvcoin_gpuminer
+
+wget -O ~/ocvcoin_gpuminer.zip https://github.com/ocvcoin/gpuminer/archive/refs/heads/main.zip
+
+unzip ~/ocvcoin_gpuminer.zip -d ~/ocvcoin_gpuminer
+
+python3 ~/ocvcoin_gpuminer/gpuminer-main/ocvcoin_miner.py $@
+
+
+
+
+
